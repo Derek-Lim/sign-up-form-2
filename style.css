@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "Norse Bold";
+  src: url("fonts/Norse-Bold.woff2"), url(fonts/Norse-Bold.woff);
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  --odin-height: 90px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  display: flex;
+  overflow: hidden;
+  height: 100vh;
+}
+
+input {
+  width: 150px;
+}
+
+.img-container {
+  background-image: url('background.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 850px;
+}
+
+.brand {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: relative;
+  top: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.brand span {
+  font-size: 70px;
+  font-family: "Norse Bold";
+  position: relative;
+  top: 10px;
+}
+
+img[src="odin-lined.png"] {
+  aspect-ratio: 100 / 125;
+  height: var(--odin-height);
+}
+
+.credit {
+  color: rgb(200 200 200);
+  position: relative;
+  top: 840px;
+  text-align: center;
+}
+
+.img-container a {
+  color: rgb(200 200 200);
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(250 250 250);
+}
+
+.top {
+  padding: 50px;
+  font-weight: bold;
+  flex-grow: 1;
+}
+
+.top > div {
+  position: relative;
+  top: 150px;
+}
+
+.top p + p {
+  margin-top: 20px;
+}
+
+form {
+  background-color: white;
+  box-shadow: 3px 3px 10px grey;
+  padding: 0 50px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+form .motivation {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+form .row {
+  display: flex;
+  gap: 70px;
+}
+
+form .row .group {
+  display: flex;
+  flex-direction: column;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+}
+
+form .row .group input {
+  height: 20px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px 1px rgb(0 0 0 / 20%);
+  border: 1px solid grey;
+  color:rgb(250 250 250);
+}
+
+.bottom {
+  padding: 20px 50px;
+  flex-grow: 1;
+}
+
+.bottom a {
+  text-decoration: none;
+  color: #596D48;
+}
+
+.bottom button {
+  background-color: #596D48;
+  color: rgb(250 250 250);
+  padding: .5em 2.5em;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 1px 1px 5px grey;
+  margin-bottom: 20px;
+}
